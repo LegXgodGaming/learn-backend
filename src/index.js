@@ -1,5 +1,5 @@
 import dotenv from "dotenv"
-
+import {app} from './app.js'
 
 import connectDB from "./db/index.js";
 
@@ -22,6 +22,6 @@ connectDB()
       )
 
 }) 
-.catch( (error)=>{
-    console.log(`MongoDB connection error" ,error`);
+.catch((err) => {
+  console.log("MONGO db connection failed !!! ", err);
 })
