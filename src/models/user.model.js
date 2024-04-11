@@ -48,7 +48,7 @@ const userSchema = new Schema({
         }
     ],
     password:{
-        type:true,
+        type:String,
         required:[true,"password is required"]
 
     },
